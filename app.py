@@ -1,10 +1,8 @@
 # from crypt import methods
 import json
 from flask import Flask, Response, jsonify, make_response
-from datetime import datetime
-import re
-
 from flask_cors import cross_origin
+
 import text2signl as text2sgl
 
 app = Flask(__name__)
@@ -30,3 +28,5 @@ def not_found(error):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+    
